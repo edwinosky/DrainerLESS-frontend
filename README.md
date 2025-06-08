@@ -47,8 +47,8 @@ DrainerLESS previously offered two rescue methods: **Permit Rescue** and **Bundl
 
 | Feature                  | Permit Rescue (Old)                     | Bundle Rescue (Old)                    | EIP-7702 Rescue (New)                  |
 |--------------------------|-----------------------------------------|----------------------------------------|----------------------------------------|
-| **Supported Networks**   | Ethereum, BNB Chain                    | Ethereum, BNB Chain                    | All EVM networks (Base, Optimism, etc.)|
-| **Transaction Type**     | Single ERC20 permit transaction         | Multiple transactions in a bundle       | Single batched transaction             |
+| **Supported Networks**   | Ethereum, BNB Chain, any OP EVM         | Ethereum, BNB Chain                    | All EVM networks (Base, Optimism, etc.)|
+| **Transaction Type**     | Single ERC20 permit transaction         | Multiple transactions in a bundle      | Single batched transaction             |
 | **Gas Efficiency**       | Moderate (single transaction)           | Low (multiple transactions)            | High (batched operations)             |
 | **Complexity**           | Limited to ERC20 tokens                | Supports ERC20 and some NFTs           | Supports ERC20, NFTs, and airdrops     |
 | **Security**             | Relies on permit signatures            | Relies on pre-signed transactions      | Cryptographic temporary authorizations |
@@ -66,9 +66,8 @@ DrainerLESS supports the following networks (status as of v3.0.1):
 - **Pending**: BNB Chain
 - **Not Functional**: Polygon
 
-Check the [Home.js](src/pages/Home.js) file for the latest network status and contract addresses.
-
 ## Installation
+This is just the frontend, the dapp to work correctly also needs a backend that works directly on the blockchain, and that backend is preconfigured, so if you clone this repository and host it on a VPS or hosting you will have the functional dapp but with its preset configurations.
 
 ### Prerequisites
 - Node.js (v18 or higher)
