@@ -43,7 +43,7 @@ This update is implemented in `RescueEIP7702.tsx`, which handles batched transac
 
 ## Comparison with Previous Services
 
-DrainerLESS previously offered two rescue methods: **Permit Rescue** and **Bundle Rescue**, both limited to Ethereum and BNB Chain. The EIP-7702 update significantly improves upon these:
+DrainerLESS previously offered two rescue methods: **Permit Rescue** and **Bundle Rescue**, the latter limited to Ethereum and BNB Chain, while **Permit Rescue** was limited to tokens with the permit function enabled. The EIP-7702 update significantly improves both methods:
 
 | Feature                  | Permit Rescue (Old)                     | Bundle Rescue (Old)                    | EIP-7702 Rescue (New)                  |
 |--------------------------|-----------------------------------------|----------------------------------------|----------------------------------------|
